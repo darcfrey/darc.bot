@@ -1,21 +1,3 @@
-"""import pandas as pd
-from transformers import pipeline
-data=pd.read_csv("book.csv")#the dictionary
-print(data)
-response={}
-for ide, row in data.iterrows():
-    user_input=row('INPUT QUESTIONS')
-    bot_response=row('BOT RESPONSES')
-    response(user_input)== bot_response
-
-while True:
-        user_input = input("You: ")
-        if user_input.lower() == 'exit':
-            print("AI: Goodbye!")
-            break
-
-        bot_response = response(user_input)
-        print("AI:", bot_response)"""
 
 import pandas as pd
  #import openai

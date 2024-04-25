@@ -2,12 +2,10 @@ import pandas as pd
 import google.generativeai as genai
 #from google.colab import userdata
 
-#userdata.put("API_KEY", "AIzaSyBW76VKaYp3y2Pk7bhMin1KXFrlrdMFoA0")
-#print("saved")
 
 # this takes in the users api  to access the gemini model below
 # as api can not be uploaded there are instructions for user to get there own personal api key from gemini dashboard  in the readme file
-genai.configure(api_key="AIzaSyBW76VKaYp3y2Pk7bhMin1KXFrlrdMFoA0")
+genai.configure(api_key="API_KEY")
 
 # this loads the pre determined user input and bot responses from the excel file
 data = pd.read_excel("chatbot_data.xlsx")
@@ -25,7 +23,7 @@ gemini_model = genai.GenerativeModel('gemini-pro')
 # this prints the first line , a greeting line 
 #there includes another line that prompts the user to input text and converts it to lowercase
 while True:
-print("Darcbot: Hi! I'm your chatbot")  
+    print("Darcbot: Hi! I'm your chatbot")  
     user_input = input("You: ").lower()
     
     if user_input == "exit":
@@ -48,6 +46,7 @@ print("Darcbot: Hi! I'm your chatbot")
 
 
         
+
 
 
 

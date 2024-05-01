@@ -5,7 +5,7 @@ from transformers import pipeline
 
 # this takes in the users api  to access the gemini model below
 # as api can not be uploaded there are instructions for user to get there own personal api key from gemini dashboard  in the readme file
-genai.configure(api_key="AIzaSyBW76VKaYp3y2Pk7bhMin1KXFrlrdMFoA0")
+genai.configure(api_key="your_API_key")
 
 # this loads the pre determined user input and bot responses from the excel file
 data = pd.read_excel("chatbot_data.xlsx")
